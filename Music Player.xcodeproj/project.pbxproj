@@ -17,7 +17,7 @@
 		07A9C44B282E699800A0E38D /* Music_PlayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A9C44A282E699800A0E38D /* Music_PlayerTests.swift */; };
 		07A9C455282E699800A0E38D /* Music_PlayerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A9C454282E699800A0E38D /* Music_PlayerUITests.swift */; };
 		07A9C457282E699800A0E38D /* Music_PlayerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A9C456282E699800A0E38D /* Music_PlayerUITestsLaunchTests.swift */; };
-		07A9C464282E6B3400A0E38D /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A9C463282E6B3400A0E38D /* Person.swift */; };
+		07A9C464282E6B3400A0E38D /* Music.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A9C463282E6B3400A0E38D /* Music.swift */; };
 		07A9C466282E6BF200A0E38D /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A9C465282E6BF200A0E38D /* MainPresenter.swift */; };
 		07A9C46C282E84C300A0E38D /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07A9C46B282E84C300A0E38D /* MainViewController.xib */; };
 		07A9C46E282E861400A0E38D /* ModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A9C46D282E861400A0E38D /* ModuleBuilder.swift */; };
@@ -55,7 +55,7 @@
 		07A9C450282E699800A0E38D /* Music PlayerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Music PlayerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		07A9C454282E699800A0E38D /* Music_PlayerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Music_PlayerUITests.swift; sourceTree = "<group>"; };
 		07A9C456282E699800A0E38D /* Music_PlayerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Music_PlayerUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		07A9C463282E6B3400A0E38D /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		07A9C463282E6B3400A0E38D /* Music.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Music.swift; sourceTree = "<group>"; };
 		07A9C465282E6BF200A0E38D /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
 		07A9C46B282E84C300A0E38D /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 		07A9C46D282E861400A0E38D /* ModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleBuilder.swift; sourceTree = "<group>"; };
@@ -161,7 +161,7 @@
 		07A9C469282E846000A0E38D /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				07A9C463282E6B3400A0E38D /* Person.swift */,
+				07A9C463282E6B3400A0E38D /* Music.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -310,7 +310,7 @@
 				07A9C466282E6BF200A0E38D /* MainPresenter.swift in Sources */,
 				07A9C438282E699800A0E38D /* MainViewController.swift in Sources */,
 				07A9C434282E699800A0E38D /* AppDelegate.swift in Sources */,
-				07A9C464282E6B3400A0E38D /* Person.swift in Sources */,
+				07A9C464282E6B3400A0E38D /* Music.swift in Sources */,
 				07A9C436282E699800A0E38D /* SceneDelegate.swift in Sources */,
 				07A9C46E282E861400A0E38D /* ModuleBuilder.swift in Sources */,
 			);

@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController" customModule="Music_Player" customModuleProvider="target">
             <connections>
+                <outlet property="buttonStatus" destination="rla-2L-Zsy" id="ZHi-0Q-1LE"/>
                 <outlet property="greetinLabel" destination="0MV-2B-b74" id="9Xh-FQ-8oD"/>
                 <outlet property="view" destination="iN0-l3-epB" id="fhL-XU-aXJ"/>
             </connections>
@@ -27,10 +28,10 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rla-2L-Zsy">
-                    <rect key="frame" x="141" y="764" width="128" height="31"/>
+                    <rect key="frame" x="141" y="764" width="128" height="21"/>
                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                     <state key="normal" title="Button"/>
-                    <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Play"/>
                     <connections>
                         <action selector="didTapActionButtonWithSender:" destination="-1" eventType="touchUpInside" id="QV8-P0-488"/>
                     </connections>

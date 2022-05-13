@@ -9,7 +9,8 @@
 
 import Foundation
 
-struct Person {
-    let firstName: String
-    let lastName: String
+struct Music {
+    let musicName: String
+    let musicFormat: String
+    var statusMusic: String
 }

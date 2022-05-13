@@ -14,9 +14,9 @@ protocol Builder{
 
 class ModelBuilder:Builder{
     static func createMainModule() -> UIViewController {
-        let model = Person(firstName: "Egor", lastName: "Tyutyukin")
+        let model = Music(musicName: "", musicFormat: "", statusMusic: "")
         let view = MainViewController()
-        let presenter = MainPresenter(view: view, preson: model)
+        let presenter = MainPresenter(view: view, music: model)
         
         view.presenter = presenter
         return view

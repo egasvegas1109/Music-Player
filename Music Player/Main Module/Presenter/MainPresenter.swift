@@ -11,12 +11,12 @@ protocol MainViewProtocol: AnyObject{ //протокол для отправки
     func setGreeting(greeting: String)
 }
 
-protocol MainViewpPresenterProtocol: AnyObject{ //протокол для приёма
+protocol MainViewPresenterProtocol: AnyObject{ //протокол для приёма
     init(view: MainViewProtocol, preson: Person)
     func showGreeting()
 }
 
-class MainPresenter: MainViewpPresenterProtocol{
+class MainPresenter: MainViewPresenterProtocol{
     
     required init(view: MainViewProtocol, preson: Person) {
         self.view = view

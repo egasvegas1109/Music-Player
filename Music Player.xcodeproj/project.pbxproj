@@ -18,6 +18,8 @@
 		07A9C457282E699800A0E38D /* Music_PlayerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A9C456282E699800A0E38D /* Music_PlayerUITestsLaunchTests.swift */; };
 		07A9C464282E6B3400A0E38D /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A9C463282E6B3400A0E38D /* Person.swift */; };
 		07A9C466282E6BF200A0E38D /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A9C465282E6BF200A0E38D /* MainPresenter.swift */; };
+		07A9C46C282E84C300A0E38D /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07A9C46B282E84C300A0E38D /* MainViewController.xib */; };
+		07A9C46E282E861400A0E38D /* ModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A9C46D282E861400A0E38D /* ModuleBuilder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		07A9C456282E699800A0E38D /* Music_PlayerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Music_PlayerUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		07A9C463282E6B3400A0E38D /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		07A9C465282E6BF200A0E38D /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
+		07A9C46B282E84C300A0E38D /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		07A9C46D282E861400A0E38D /* ModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleBuilder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,13 +109,12 @@
 			children = (
 				07A9C433282E699800A0E38D /* AppDelegate.swift */,
 				07A9C435282E699800A0E38D /* SceneDelegate.swift */,
-				07A9C437282E699800A0E38D /* MainViewController.swift */,
-				07A9C463282E6B3400A0E38D /* Person.swift */,
-				07A9C465282E6BF200A0E38D /* MainPresenter.swift */,
+				07A9C467282E841300A0E38D /* Main Module */,
 				07A9C439282E699800A0E38D /* Main.storyboard */,
 				07A9C43C282E699800A0E38D /* Assets.xcassets */,
 				07A9C43E282E699800A0E38D /* LaunchScreen.storyboard */,
 				07A9C441282E699800A0E38D /* Info.plist */,
+				07A9C46D282E861400A0E38D /* ModuleBuilder.swift */,
 			);
 			path = "Music Player";
 			sourceTree = "<group>";
@@ -131,6 +134,41 @@
 				07A9C456282E699800A0E38D /* Music_PlayerUITestsLaunchTests.swift */,
 			);
 			path = "Music PlayerUITests";
+			sourceTree = "<group>";
+		};
+		07A9C467282E841300A0E38D /* Main Module */ = {
+			isa = PBXGroup;
+			children = (
+				07A9C468282E845700A0E38D /* View */,
+				07A9C469282E846000A0E38D /* Model */,
+				07A9C46A282E846F00A0E38D /* Presenter */,
+			);
+			path = "Main Module";
+			sourceTree = "<group>";
+		};
+		07A9C468282E845700A0E38D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				07A9C437282E699800A0E38D /* MainViewController.swift */,
+				07A9C46B282E84C300A0E38D /* MainViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		07A9C469282E846000A0E38D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				07A9C463282E6B3400A0E38D /* Person.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		07A9C46A282E846F00A0E38D /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				07A9C465282E6BF200A0E38D /* MainPresenter.swift */,
+			);
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -240,6 +278,7 @@
 				07A9C440282E699800A0E38D /* LaunchScreen.storyboard in Resources */,
 				07A9C43D282E699800A0E38D /* Assets.xcassets in Resources */,
 				07A9C43B282E699800A0E38D /* Main.storyboard in Resources */,
+				07A9C46C282E84C300A0E38D /* MainViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +308,7 @@
 				07A9C434282E699800A0E38D /* AppDelegate.swift in Sources */,
 				07A9C464282E6B3400A0E38D /* Person.swift in Sources */,
 				07A9C436282E699800A0E38D /* SceneDelegate.swift in Sources */,
+				07A9C46E282E861400A0E38D /* ModuleBuilder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

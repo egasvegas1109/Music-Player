@@ -16,7 +16,7 @@ class ModelBuilder:Builder{
     static func createMainModule() -> UIViewController {
         let model = Music(musicName: "", musicFormat: "", statusMusic: "")
         let view = MainViewController()
-        let presenter = MainPresenter(view: view, music: model)
+        let presenter = MainPresenter(view: view, model: model)
         
         view.presenter = presenter
         return view

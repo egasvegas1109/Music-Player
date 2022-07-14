@@ -15,7 +15,7 @@ protocol MainViewProtocol: AnyObject{ //протокол для отправки
 }
 
 protocol MainViewPresenterProtocol: AnyObject{ //протокол для приёма
-    init(view: MainViewProtocol, music: Music)
+    init(view: MainViewProtocol, model: Music)
     func playAndStop()
     func initAV(initPlayer: Bool)
 }
@@ -24,13 +24,13 @@ class MainPresenter: MainViewPresenterProtocol{
     var player: AVAudioPlayer?
     var initPlayer: Bool = false
 
-    required init(view: MainViewProtocol, music: Music) {
+    required init(view: MainViewProtocol, model: Music) {
         self.view = view
-        self.music = music
+        self.model = model
     }
     
     let view: MainViewProtocol
-    var music: Music
+    var model: Music
     
     func initAV(initPlayer: Bool)
     {
@@ -56,8 +56,8 @@ class MainPresenter: MainViewPresenterProtocol{
     func playAndStop() {
         if let player = player, player.isPlaying {
             //музыка играет
-            music.statusMusic = "Play"
-            view.setStatus(statusMusic: music.statusMusic)
+            model.statusMusic = "Play"
+            view.setStatus(statusMusic: model.statusMusic)
             
             player.pause()
         }
@@ -65,11 +65,13 @@ class MainPresenter: MainViewPresenterProtocol{
         {
             //музыка не играет
             initAV(initPlayer: initPlayer)//инициализация плеера
-
-            music.statusMusic = "Stop"
-            view.setStatus(statusMusic: music.statusMusic)
             
-            view.setMusicName(musicName: music.musicName)
+            model.musicName = "PHARAOH - Unname"
+            view.setMusicName(musicName: model.musicName)
+            
+            model.statusMusic = "Stop"
+            view.setStatus(statusMusic: model.statusMusic)
+            
             player!.play()
         }
     }

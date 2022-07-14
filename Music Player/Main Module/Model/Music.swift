@@ -10,7 +10,7 @@
 import Foundation
 
 struct Music {
-    let musicName: String
-    let musicFormat: String
+    var musicName: String
+    var musicFormat: String
     var statusMusic: String
 }
